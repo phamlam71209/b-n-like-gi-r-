@@ -3,95 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bán Like & Sub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 24px;
-        }
-        .services {
-            margin: 20px 0;
-        }
-        .service {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-    </style>
+    <title>ChillVN Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Bán Like & Sub Chất Lượng</h1>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ChillVN Clone</h1>
+            <nav>
+                <a href="#services" class="px-4">Dịch vụ</a>
+                <a href="#contact" class="px-4">Liên hệ</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <p>Chúng tôi cung cấp dịch vụ tăng like và sub uy tín, chất lượng cao.</p>
-        <div class="services">
-            <div class="service">
-                <h3>Gói Like Facebook</h3>
-                <p>1000 like - 100.000 VNĐ</p>
-                <a href="#" class="btn">Mua ngay</a>
-                <div class="service">
-    <h2>Gói Like Facebook</h2>
-    <p>1000 Like - 100.000 VNĐ</p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="your-email@example.com"> <!-- Thay bằng email PayPal của bạn -->
-        <input type="hidden" name="item_name" value="Gói Like Facebook">
-        <input type="hidden" name="amount" value="100.00"> <!-- Giá tiền (USD) -->
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="submit" value="Thanh toán ngay" class="btn">
-    </form>
-</div>
 
+    <!-- Hero Section -->
+    <section class="bg-blue-300 text-center p-10">
+        <h2 class="text-4xl font-bold mb-4">Dịch vụ Tăng Tương Tác Online</h2>
+        <p class="text-lg">Tăng like, sub, view uy tín, chất lượng cao!</p>
+        <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded">Xem Dịch Vụ</button>
+    </section>
+
+    <!-- Dịch vụ -->
+    <section id="services" class="container mx-auto p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Các Dịch Vụ</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Dịch vụ 1 -->
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-xl font-bold">Tăng Like Facebook</h3>
+                <p class="mt-2">1000 Like - 100.000 VNĐ</p>
+                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Mua ngay</button>
             </div>
-            <div class="service">
-                <h3>Gói Sub YouTube</h3>
-                <p>1000 sub - 150.000 VNĐ</p>
-                <a href="#" class="btn">Mua ngay</a>
-                <div class="service">
-    <h2>Gói Sub YouTube</h2>
-    <p>1000 Sub - 150.000 VNĐ</p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="your-email@example.com"> <!-- Thay bằng email PayPal của bạn -->
-        <input type="hidden" name="item_name" value="Gói Sub YouTube">
-        <input type="hidden" name="amount" value="150.00"> <!-- Giá tiền (USD) -->
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="submit" value="Thanh toán ngay" class="btn">
-    </form>
-</div>
-
+            <!-- Dịch vụ 2 -->
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-xl font-bold">Tăng Sub YouTube</h3>
+                <p class="mt-2">1000 Sub - 150.000 VNĐ</p>
+                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Mua ngay</button>
+            </div>
+            <!-- Dịch vụ 3 -->
+            <div class="bg-white p-6 shadow rounded">
+                <h3 class="text-xl font-bold">Tăng View TikTok</h3>
+                <p class="mt-2">10.000 View - 200.000 VNĐ</p>
+                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Mua ngay</button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Form Liên hệ -->
+    <section id="contact" class="bg-gray-200 p-10">
+        <h2 class="text-3xl font-bold text-center mb-6">Liên Hệ</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="max-w-lg mx-auto bg-white p-6 shadow rounded">
+            <input type="text" name="name" placeholder="Tên của bạn" class="w-full p-2 mb-4 border rounded" required>
+            <input type="email" name="_replyto" placeholder="Email của bạn" class="w-full p-2 mb-4 border rounded" required>
+            <textarea name="message" placeholder="Nội dung liên hệ" class="w-full p-2 mb-4 border rounded" required></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>© 2025 ChillVN Clone. All rights reserved.</p>
+    </footer>
 </body>
 </html>
